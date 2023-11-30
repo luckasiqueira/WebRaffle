@@ -16,6 +16,7 @@ func main() {
 	http.HandleFunc("/add", controllers.Add)
 	http.HandleFunc("/editar", routes.Edit)
 	http.HandleFunc("/remover", routes.Delete)
+	http.HandleFunc("/resetar", routes.Reset)
 
 	// File server
 	static := http.FileServer(http.Dir("public/assets/"))

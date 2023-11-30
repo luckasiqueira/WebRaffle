@@ -23,9 +23,9 @@ const (
 //
 // See http://www.postgresql.org/docs/current/static/protocol-error-fields.html for details of the fields
 type Error struct {
-	Severity         string
-	Code             ErrorCode
-	Message          string
+	Severity string
+	Code     ErrorCode
+	Message  string
 	Detail           string
 	Hint             string
 	Position         string
